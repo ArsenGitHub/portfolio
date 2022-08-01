@@ -1,0 +1,11 @@
+@keyframes moveinleft {
+    from {transform: translateX(-100%);}
+    50% {transform: translateX(-50%);}
+    to {transform: translateX(0%);}
+};
+
+@keyframes moveinright {
+    from {transform: translateX(100%);}
+    50% {transform: translateX(50%);}
+    to {transform: translatex(0%);}
+}

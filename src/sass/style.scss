@@ -1,0 +1,48 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+
+
+body {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/animations';
+@import 'base/media';
+
+
+@import 'blocks/aside';
+@import 'blocks/social';
+@import 'blocks/introduction';
+@import 'blocks/subtitle';
+@import 'blocks/nav';
+@import 'blocks/menu';
+@import 'blocks/burger';
+@import 'blocks/main';
+
+

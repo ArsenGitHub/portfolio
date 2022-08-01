@@ -1,0 +1,16 @@
+.social {
+    display: flex;
+    width: 90px;
+    height: 20px;
+    align-items: center;
+    justify-content: space-between;
+    &__link:hover {
+        transform: scale(1.5);
+        transition: all .4s;
+    }
+    &__img {
+        height: 20px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

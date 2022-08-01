@@ -1,0 +1,12 @@
+.main__aside {
+    position: fixed;
+    top: 50%;
+    left: calc(-170px + 12px + 50px);
+    transform: rotate(-90deg);
+}
+
+.main__burger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}

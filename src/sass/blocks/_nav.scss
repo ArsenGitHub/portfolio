@@ -1,25 +1,32 @@
 .nav {
-    padding: 140px 0 0 21%;
-    position: relative;
-    &__cross {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        height: 29px;
-        width: 29px;
-        font-size: 38px;
-        line-height: 29px;
-        text-align: center;
-        cursor: pointer;
-    }
     &__link {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 24px;
         line-height: 36px;
         color: #FFFFFF;
+        &:hover {
+            color:#FFFFFF;
+        }
     }
     &__item:nth-child(-n+4) {
         margin-bottom: 15px;
     }
+    &__item:before {
+        content: '';
+        position: absolute;
+        left: 35px;
+        margin-top: 3px;
+        border: 14px solid transparent; 
+        border-bottom: 14px solid white;
+    }
+    &__item:hover {
+        &:before {
+            transform: scale(1.1) rotate(90deg);
+            transition: all 0.5s;
+            border-bottom: 14px solid black;
+        }
+    }
 }
+
+

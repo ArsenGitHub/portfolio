@@ -8,6 +8,7 @@
     transition: all 0.7s;
     opacity: 0;
     visibility: hidden;
+    z-index: 5;
     &--enabled {
         left: 0;
         opacity: 1;

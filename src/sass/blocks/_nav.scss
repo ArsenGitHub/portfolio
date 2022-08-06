@@ -1,4 +1,7 @@
 .nav {
+    &__list {
+        position: relative;
+    }
     &__link {
         text-transform: uppercase;
         font-weight: 700;
@@ -15,16 +18,17 @@
     &__item:before {
         content: '';
         position: absolute;
-        left: 35px;
-        margin-top: 3px;
-        border: 14px solid transparent; 
-        border-bottom: 14px solid white;
+        left: -35px;
+        margin-top: 7px;
+        border: 10px solid transparent; 
+        border-bottom: 10px solid white;
+        border-radius: 100%;
     }
     &__item:hover {
         &:before {
             transform: scale(1.1) rotate(90deg);
             transition: all 0.5s;
-            border-bottom: 14px solid black;
+            border-top: 10px solid black;
         }
     }
 }

@@ -3,20 +3,12 @@
     min-height: 100vh;
     background: url('../images/main_bg.png') 70% 55%/cover no-repeat;
     &__subtitle {
-        padding-left: 10px;
-        &:before {
-            position: absolute;
-            top: -5px;
-            left: 0;
-        }
+        @include before_circle_text;
     }
     &__title {
         margin: 0;
         padding: 0;
         padding-top: 7px;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 60px;
     }
     &__wrapper {
         margin-top: 27px;
@@ -34,14 +26,15 @@
         font-size: 14px;
         line-height: 21px;
         color: #000000;
+        transition: all 0.3s;
+        border: 2px solid $main_color;
+        border-radius: 8px;
         &:first-child {
             background-color: $main_color;
-            border-radius: 8px;
         }
         &:hover {
             color: #fff;
             background: $main_bgcolor;
-            border-radius: 8px;
             box-shadow: -2px 5px 10px 0px #1ac3ee ;
         }    
     }

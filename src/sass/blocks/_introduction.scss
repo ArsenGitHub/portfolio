@@ -3,7 +3,11 @@
     min-height: 100vh;
     background: url('../images/main_bg.png') 70% 55%/cover no-repeat;
     &__subtitle {
-        @include before_circle_text;
+        margin: 0;
+        &:before {
+            top: -5px;
+            left: 0;
+        }    
     }
     &__title {
         margin: 0;

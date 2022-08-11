@@ -2,11 +2,14 @@
 @import 'libs/fonts';
 
 
-body {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: #000000;
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/animations';
+@import 'base/media';
+
+
+h1, h2, h3, h4,  h5, h6, p {
+    margin: 0;
 }
 
 a {
@@ -29,11 +32,19 @@ li {
     margin: 0 auto;
 }
 
+.line {
+    width: 60px;
+    height: 3px;
+    border-radius: 100%;
+    background: $main_color;
+}
 
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/animations';
-@import 'base/media';
+.descr {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
 
 
 @import 'blocks/aside';
@@ -46,10 +57,3 @@ li {
 @import 'blocks/burger';
 @import 'blocks/main';
 @import 'blocks/about';
-@import 'blocks/line';
-@import 'blocks/descr';
-
-
-
-
-

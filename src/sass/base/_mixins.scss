@@ -1,9 +1,7 @@
-@mixin before_circle_text {
+@mixin before_circle {
     &:before {
         content: '';
         position: absolute;
-        top: -5px;
-        left: 0;
         width: 36px;
         height: 36px;
         border-radius: 100%;

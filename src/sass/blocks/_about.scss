@@ -52,6 +52,8 @@
     }
     &__circle {
         position: relative;
+        justify-self: center;
+        padding-top: 7px;
         @include before_circle;
         &:before {
             top: 0;
@@ -60,9 +62,6 @@
         }
     }
     &__icon {
-        display: block;
-        margin: 0 auto;
-        margin-top: 7px;
         max-width: 100%;
         object-fit: cover;
     }

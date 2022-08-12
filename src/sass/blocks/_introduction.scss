@@ -4,10 +4,6 @@
     background: url('../images/main_bg.png') 70% 55%/cover no-repeat;
     &__subtitle {
         margin: 0;
-        &:before {
-            top: -5px;
-            left: 0;
-        }    
     }
     &__title {
         margin: 0;

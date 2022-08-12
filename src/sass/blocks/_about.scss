@@ -20,13 +20,10 @@
     }
     &__subtitle {
         margin-top: 6px;
-        &:before {
-            top: -5px;
-            left: 0;
-        }
     }
     &__title {
         margin-top: 9px;
+        text-align: left;
     }
     &__text {
         margin-top: 20px;
@@ -50,7 +47,7 @@
         column-gap: 20px;
         grid-auto-rows: minmax(99px, auto);
     }
-    &__circle {
+    &__icon-box {
         position: relative;
         justify-self: center;
         padding-top: 7px;

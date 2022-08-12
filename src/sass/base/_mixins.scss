@@ -9,3 +9,17 @@
         z-index: -1;
     }
 }
+
+@mixin before_circle--left {
+    &:before {
+        top: -5px;
+        left: 0;
+    }
+}
+
+@mixin before_circle--center {
+    &:before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

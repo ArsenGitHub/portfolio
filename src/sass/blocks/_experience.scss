@@ -1,0 +1,66 @@
+.experience {
+    padding-top: 126px;
+    min-height: 586px;
+    &__wrapper {
+        margin-top: 64px;
+        display: grid;
+        grid-template-columns: repeat(2, 415px);
+        column-gap: 130px;
+        justify-content: center;
+    }
+    &__title {
+        position: relative;
+        padding-left: 43px;
+        line-height: 20px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background: $main_color;
+            z-index: -1;
+        }
+    }
+    &__list {
+        padding-top: 50px;
+        padding-left: 43px;
+        border-left: 1px solid #000;
+    }
+    &__item {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 18px;
+            left: -43px;
+            width: 43px;
+            height: 1px;
+            background: #000;
+        }
+    }
+    &__item + &__item {
+        margin-top: 45px;
+    }
+    &__head {
+        display: flex;
+    }
+    &__icon-box {
+        margin-right: 20px;
+        width: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include before_circle;
+    }
+    &__icon {
+        max-width: 100%;
+        object-fit: cover;
+    }
+    &__descr {
+        margin-top: 12px;
+    }
+        
+}

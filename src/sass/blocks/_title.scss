@@ -3,11 +3,16 @@
     font-size: 48px;
     line-height: 60px;
     color: #000000;
-    &--medium {
+    &--m {
         font-size: 36px;
-        line-height: 56px;
+        line-height: 60px;
+        text-align: center;
     }
-    &--small {
+    &--s {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &--xs {
         font-size: 14px;
         line-height: 21px;
     }

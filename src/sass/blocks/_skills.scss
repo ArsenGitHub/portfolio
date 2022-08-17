@@ -3,12 +3,12 @@
     min-height: 1024px;
     &__wrapper {
         margin-top: 60px;
-        padding: 0 10px;
         display: grid;
-        grid-template-rows: 270px;
-        grid-template-columns: repeat(auto-fill, minmax(270px, auto));
+        grid-template-rows: minmax(270px, auto);
+        grid-template-columns: repeat(auto-fill, 270px);
         gap: 13px;
-        grid-auto-rows: 270px;
+        grid-auto-rows: minmax(270px, auto);
+        justify-content: center;
     }
     &__item {
         padding: 30px 30px 25px;
@@ -33,7 +33,7 @@
         margin-top: 120px;
         display: grid;
         grid-template-rows: 70px;
-        grid-template-columns: repeat(auto-fill, minmax(350px, auto));
+        grid-template-columns: repeat(auto-fill, 350px);
         grid-auto-rows: 70px;
         column-gap: 45px;
         row-gap: 30px;
@@ -41,10 +41,23 @@
     &__box {
         padding-top: 8px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-between;
     }
+    &__text-box {
+        padding-left: 14px;
+        display: flex;  
+        justify-content: space-between;
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: 0;
+            top: -7px;
+        }
+    }
     &__scale-box {
+        display: flex;
+        align-items: center;
         height: 14px;
         width: 100%;
         border: 1px solid #c5c3c2;
@@ -52,7 +65,7 @@
         background: #E8E4DE;
     }
     &__scale {
-        height: inherit;
+        height: calc(100% - 1px);
         border-radius: 4px;
         background: $main_bgcolor;
     }

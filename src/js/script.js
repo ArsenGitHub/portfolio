@@ -14,3 +14,12 @@ closeCross.addEventListener('click', () => {
 closeOverlay.addEventListener('click', () => {
     menu.classList.remove('menu--enabled');
 });
+
+
+const percentValue = document.querySelectorAll('.skills__percent'),
+        percentScale = document.querySelectorAll('.skills__scale');
+
+percentValue.forEach( (item, i) => {
+    percentScale[i].style.width = item.innerHTML;
+});
+

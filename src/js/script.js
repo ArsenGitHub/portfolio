@@ -23,3 +23,4 @@ percentValue.forEach( (item, i) => {
     percentScale[i].style.width = item.innerHTML;
 });
 
+

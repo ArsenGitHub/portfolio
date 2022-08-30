@@ -4,7 +4,7 @@
     &__wrapper {
         min-height: 517px;
         display: grid;
-        grid-template-rows: minmax(245px, auto) minmax(235px, auto);
+        grid-template-rows: minmax(248px, auto) minmax(235px, auto);
         grid-template-columns: 400px 570px;
         grid-auto-rows: minmax(245px, auto);
         column-gap: 70px;
@@ -43,10 +43,9 @@
     }
     &__item {
         display: grid;
-        grid-template-rows: minmax(99px, auto);
+        grid-template-rows: auto;
         grid-template-columns: 40px 200px;
         column-gap: 20px;
-        grid-auto-rows: minmax(99px, auto);
     }
     &__icon-box {
         position: relative;

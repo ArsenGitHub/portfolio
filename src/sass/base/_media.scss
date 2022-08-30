@@ -1,3 +1,287 @@
-@media (min-width: 1400px) {
-    .container {max-width: 1140px;}
+@media (max-width: 1350px) {
+    .aside {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 990px;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 1fr 1.5fr;
+            column-gap: 25px;
+        }
+        &__skills {
+            gap: 20px;
+        }
+        &__item {
+            grid-template-columns: 40px auto;
+            column-gap: 10px;
+        }
+    }
+    .skills {
+        &__inner {
+            justify-content: center;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit,280px);
+            justify-content: center;
+            gap: 20px;
+        }
+        &__link:nth-child(4), &__link:nth-child(6)  {
+            grid-row: unset;
+            grid-column: unset;
+        }
+    }
+    .contacts {
+        padding-bottom: 70px;
+        &__wrapper {
+            grid-template-columns: 1fr 1.5fr;
+            column-gap: 25px;
+        }
+        &__form {
+            grid-template-columns: repeat(2,auto);
+        }
+        &__img {
+            height: 80%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 760px;
+    }
+    .social__link:hover {
+        transform: none;
+        transition: all 0s;
+    }
+    .nav__item:hover {
+        &:before {
+            transform: none;
+            transition: all 0s;
+            border-top: 10px solid transparent;
+        }
+    }
+    .introduction__link:nth-child(1):hover {
+        transition: all 0s;
+        color: #000000;
+        background: $main_color;
+        box-shadow: none;
+    }
+    .introduction__link:nth-child(2):hover {
+        transition: all 0s;
+        color: #000000;
+        background: inherit;
+        box-shadow: none;
+    }
+    .contacts__button:hover {
+        transition: all 0s;
+        color: #000000;
+        background: $main_color;
+        box-shadow: none;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 55px;
+        &--m {
+            margin-top: 26px;
+            font-size: 28px;
+            line-height: 55px;
+        }
+        &--xs {
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &--s {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    .about {
+        margin-top: 70px;
+        &__wrapper {
+            grid-template-rows: repeat(2, auto);
+            row-gap: 20px;
+        }
+        &__skills {
+            grid-template-columns: auto;
+        }
+        &__item {
+            grid-template-rows: repeat(2, auto);
+        }
+        &__img {
+            height: 65%;
+        }
+    }
+    .experience {
+        margin-top: 70px;
+        &__wrapper {
+            margin-top: 50px;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 55px;
+        }
+    }
+    .skills {
+        margin-top: 70px;
+        &__inner {
+            margin-top: 70px;
+            grid-template-columns: repeat(auto-fill,330px);
+        }
+    }
+    .portfolio {
+        margin-top: 70px;
+        &__link:hover {
+            transition: all 0s;
+            transform: none;
+            box-shadow: none;
+        }
+    }
+    .contacts {
+        margin-top: 70px;
+        padding-bottom: 50px;
+        &__img-box {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: auto;
+        }
+    }
+    .line {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 570px;
+    }
+    .title {
+        font-size: 26px;
+        line-height: 39px;
+        &--m {
+            font-size: 28px;
+            line-height: 55px;
+        }
+        &--xs {
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &--s {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    .about {
+        margin-top: 40px;
+        &__photo-box {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-rows: auto auto;
+            grid-template-columns: auto;
+            row-gap: 20px;
+        }
+    }
+    .experience {
+        margin-top: 40px;
+        &__wrapper {
+            margin-top: 40px;
+            grid-template-rows: auto;
+            grid-template-columns: auto;
+            column-gap: 0px;
+            row-gap: 40px;
+            grid-auto-rows: auto;
+        }
+    }
+    .skills {
+        margin-top: 40px;
+        &__inner {
+            margin-top: 40px;
+        }
+        &__wrapper {
+            margin-top: 20px;
+        }
+    }
+    .portfolio {
+        margin-top: 40px;
+        &__wrapper {
+            margin-top: 40px;
+        }
+    }
+    .contacts {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+    .main__burger {
+        right: 20px;
+    }
+    .menu__wrapper {
+        width: 250px;
+        padding-left: 55px;
+    }
+    .about {
+        &__title {
+            margin-top: 25px;
+        }
+        &__line {
+            margin-top: 15px;
+        }
+    }
+    .title {
+        font-size: 26px;
+        line-height: 39px;
+        &--m {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &--xs {
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &--s {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    .skills {
+        &__inner {
+            grid-template-columns: repeat(auto-fill,300px);
+        }
+    }
+    .contacts {
+        &__form {
+            grid-template-rows: 45px 45px 143px 101px;
+            grid-template-columns: auto;
+        }
+        &__inner:nth-child(3), &__inner:nth-child(4) {
+            grid-row: unset;
+            grid-column: unset;
+        }
+        &__inner:nth-child(4) {
+            grid-template-rows: 36px auto;
+            grid-template-columns: minmax(180px, auto);
+            row-gap: 20px;
+            justify-items: center;
+        }
+        &__button {
+            order: 2;
+        }
+        &__privacy-policy {
+            order: 1;
+        }
+        &__checkbox-txt {
+            width: 159px;
+        }
+    }
 }
